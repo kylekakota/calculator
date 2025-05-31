@@ -20,6 +20,7 @@ function appendValue(data) {
     screen.value += data;
   } else if (screen.value == "0" || screen.value == "Erreur") {
     screen.value = "";
+    screen.value += data;
   } else {
     screen.value += data;
   }
