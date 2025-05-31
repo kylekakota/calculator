@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="calculator">
+    <input type="text" class="screen" id="screen" value="0" disabled>
+    <div class="buttons">    
+      <div class="btn ac bg-grey" onclick="clearDisplay()">C</div>
+      <div class="btn plus/minus bg-grey" onclick="clearLastValue()">X</div>
+      <div class="btn percent bg-grey" onclick="appendValue('%')">%</div>
+      <div class="btn division bg-orange" onclick="appendValue('/')">/</div>
+      
+      <div class="btn seven" onclick="appendValue('7')">7</div>
+      <div class="btn eight" onclick="appendValue('8')">8</div>
+      <div class="btn nine"  onclick="appendValue('9')">9</div>
+      <div class="btn multiply bg-orange" onclick="appendValue('*')">*</div>
+      
+      <div class="btn four" onclick="appendValue('4')">4</div>
+      <div class="btn five" onclick="appendValue('5')">5</div>
+      <div class="btn six"  onclick="appendValue('6')">6</div>
+      <div class="btn minus bg-orange" onclick="appendValue('-')">-</div>
+
+      <div class="btn one"   onclick="appendValue('1')">1</div>
+      <div class="btn two"   onclick="appendValue('2')">2</div>
+      <div class="btn three" onclick="appendValue('3')">3</div>
+      <div class="btn plus bg-orange" onclick="appendValue('+')">+</div>
+      
+      <div class="btn zero" onclick="appendValue('0')">0</div>
+      <div class="btn quote" onclick="appendValue('.')">.</div>
+      <div class="btn equals bg-orange" onclick="calculate()">=</div>
+ 
+      
+    </div>
+  </div>
+  <footer>
+    <p>&copy;2025 Calculator. Tout droit réservés</p>
+    <div id="linkfb">
+      <a
+        href="fb://profil/100077705928783">| Kyle kakota |</a>
+    </div>
+  </footer>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
